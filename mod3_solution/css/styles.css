@@ -25,20 +25,27 @@ body {
 .navbar-toggle .icon-bar {
 	border: 1px solid black;
 }
-
-
 /* END HEADER */
 
 /* HOME PAGE */
 #main-content {
 	width: 100%;
+	margin: 0;
 }
-#main-content h2 {
+#top {
 	text-align: center;
 	margin: 10px;
 }
-#main-content .row div p{
+.menu-item {
+  margin-bottom: 20px;
+}
+.menu-item h3 {
+	text-align: center;
+}
+
+.menu-item p{
 	background: #808080;
+	height: 700px;
 }
 /* END HOME PAGE */
 
