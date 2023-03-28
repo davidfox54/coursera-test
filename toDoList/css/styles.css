@@ -1,0 +1,103 @@
+body {
+	background: #49B749;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.todo-wrapper {
+	background: white;
+	margin-top: 50px;
+	border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-weight: 300;
+}
+
+/* BEGIN header styles */
+.todo-wrapper h2 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.todo-wrapper p {
+	font-style: italic;
+	margin-top: 0px;
+}
+/* END header styles */
+
+/* BEGIN Input styles */
+.todo-wrapper form {
+    display: inline-block;
+}
+
+.todo-wrapper input {
+	padding: 3px 6px;
+}
+/* END Input styles */
+
+
+/* BEGIN list styles */
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: green;
+}
+/* END list styles */
+
+/* BEGIN button styles */
+.todo-wrapper .pretty-button {
+	color: white;
+	text-align: center;
+	border: 0;
+	border-radius: 15px;
+	padding: 5px 20px;
+	margin-right: 10px 2px;
+	display: inline-block;
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.todo-wrapper #add-button {
+	background-color: #4ba9c8;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-completed-button {
+    background-color: #4ba9c8;
+}
+
+.todo-wrapper #empty-button {
+    background-color: #9B1C20;
+}
+
+.todo-wrapper #save-button {
+    background-color: #49B749;
+}
+/* END button styles */
+
