@@ -1,0 +1,86 @@
+body {
+	background: #add8e6;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* HEADER */
+.header-container {
+	width: 100%;
+	height: 100px;
+	background: black;
+	border: 0;
+	border-radius: 20px 20px 0 0;
+	margin-bottom: 0;
+}
+#output {
+	color: white;
+	font-size: 65px;
+	float: right;
+	padding-right: 30px;
+}
+/* END HEADER */
+
+
+/* KEYS */
+.keys-container {
+	width: 100%;
+	height: 250px;
+	background: #ededed;
+	border: 0;
+	border-radius: 0 0 20px 20px;
+	margin-top: 0;
+	display: grid;
+  	grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+button {
+	height: 50px;
+}
+.keys-container button {
+	padding: 0.5em 1.25em;
+	float: left;
+	margin: 0;
+	font-size: 25px;
+	border: 0;
+	border-bottom: 1px solid #858585;
+	border-right: 1px solid #858585;
+	position: relative;
+    text-align: center;
+}
+.keys-container > *:active::before,
+.keys-container > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.keys-container .clear {
+}
+.keys-container button:nth-child(4) {
+	border-right: 0;
+}
+.operator {
+	background: #d3d3d3;
+}
+.equals {
+	height: 203px;
+	background: #e66000;
+	grid-column: -2;
+    grid-row: 2 / span 4;
+}
+.keys-container .bottom{
+	border-bottom: 0;
+}
+#bottom-left {
+	border-radius: 0 0 0 20px;
+}
+#bottom-right {
+	border-radius: 0 0 20px 0;
+}
+/* END KEYS */
