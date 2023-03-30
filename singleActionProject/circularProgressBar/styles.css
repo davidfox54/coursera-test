@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	background: #7d2ae8;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background: #fff;
+	width: 75%;
+	border-radius: 8px;
+	padding: 50px 0;
+	row-gap: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.circular-progress {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background: #f0ff;
+	border-radius: 50%;
+	background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress:before {
+	content: "";
+	position: absolute;
+	height: 210px;
+	width: 210px;
+	border-radius: 50%;
+	background: white;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+
